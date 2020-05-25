@@ -13,6 +13,7 @@ namespace CalculadoraWindowForm.Clases
         {
             double Result;
             Result = op1 * op2;
+            
             return Result;
         }
     }

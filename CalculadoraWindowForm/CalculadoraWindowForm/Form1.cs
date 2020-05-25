@@ -15,6 +15,7 @@ namespace CalculadoraWindowForm
         double Op1;//aca definimos la primera y segunda operacion en numeros que recibira la calculadora
         double Op2;
         string Operacion;//defino el strign que me reflejara la operacion que realizo
+        
 
         double op3;//guara el ultimo valor alcanzado
 
@@ -40,6 +41,7 @@ namespace CalculadoraWindowForm
             Operacion = "-";
             Op1 = double.Parse(tbxPant.Text);// el primer valor que recibe la calculadora lo transformamos decimal
             tbxPant.Clear();//luego de escribir nuestro numero se limpiara la pantalla
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -61,6 +63,7 @@ namespace CalculadoraWindowForm
         private void button17_Click(object sender, EventArgs e)
         {
             tbxPant.Text = tbxPant.Text + ".";
+
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -70,7 +73,7 @@ namespace CalculadoraWindowForm
 
         private void button19_Click(object sender, EventArgs e)
         {
-            tbxPant.Text = tbxPant.Text + "ANS";
+            tbxPant.Text = op3.ToString();
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -91,24 +94,46 @@ namespace CalculadoraWindowForm
             {
                 Mult = obj1.Multi(Op1 ,Op2);  //creo la operacion si es que sale mult , lo hare analogo para todas las operaciones
                 tbxPant.Text = Mult.ToString();
+                op3 = Mult;
+                
                
             }
             else if (Operacion == "/")
             {
+             
                 Div = obj2.Divi(Op1, Op2);  //creo la operacion si es que sale mult , lo hare analogo para todas las operaciones
-                tbxPant.Text = Div.ToString();
+                
+
+                if (Op2 != 0)
+                {
+                    tbxPant.Text = Div.ToString();
+                    op3 = Div;
+                }
+                else if (Op2 == 0)
+                {
+                    tbxPant.Text = "match ERORR";
+                    
+                }
+                
+                
+
+                
+                
+
 
             }
             else if (Operacion == "+")
             {
                 Sum = obj3.Sumar(Op1, Op2);  //creo la operacion si es que sale mult , lo hare analogo para todas las operaciones
                 tbxPant.Text = Sum.ToString();
+                op3 = Sum;
 
             }
             else if (Operacion == "-")
             {
                 Rest = obj4.Restar(Op1, Op2);  //creo la operacion si es que sale mult , lo hare analogo para todas las operaciones
                 tbxPant.Text = Rest.ToString();
+                op3 = Rest;
 
             }
 
@@ -166,7 +191,9 @@ namespace CalculadoraWindowForm
 
         private void button5_Click(object sender, EventArgs e)
         {
-            tbxPant.Text = tbxPant.Text + "AC";
+            tbxPant.Clear();
+
+
         }
     }
 }
