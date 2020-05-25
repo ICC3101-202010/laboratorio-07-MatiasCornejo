@@ -1,0 +1,10 @@
+C:\Users\matistark\Desktop\laboratorio-07-MatiasCornejo\CalculadoraWindowForm\CalculadoraWindowForm\bin\Debug\CalculadoraWindowForm.exe.config
+C:\Users\matistark\Desktop\laboratorio-07-MatiasCornejo\CalculadoraWindowForm\CalculadoraWindowForm\bin\Debug\CalculadoraWindowForm.exe
+C:\Users\matistark\Desktop\laboratorio-07-MatiasCornejo\CalculadoraWindowForm\CalculadoraWindowForm\bin\Debug\CalculadoraWindowForm.pdb
+C:\Users\matistark\Desktop\laboratorio-07-MatiasCornejo\CalculadoraWindowForm\CalculadoraWindowForm\obj\Debug\CalculadoraWindowForm.csprojAssemblyReference.cache
+C:\Users\matistark\Desktop\laboratorio-07-MatiasCornejo\CalculadoraWindowForm\CalculadoraWindowForm\obj\Debug\CalculadoraWindowForm.tbxPantalla.resources
+C:\Users\matistark\Desktop\laboratorio-07-MatiasCornejo\CalculadoraWindowForm\CalculadoraWindowForm\obj\Debug\CalculadoraWindowForm.Properties.Resources.resources
+C:\Users\matistark\Desktop\laboratorio-07-MatiasCornejo\CalculadoraWindowForm\CalculadoraWindowForm\obj\Debug\CalculadoraWindowForm.csproj.GenerateResource.cache
+C:\Users\matistark\Desktop\laboratorio-07-MatiasCornejo\CalculadoraWindowForm\CalculadoraWindowForm\obj\Debug\CalculadoraWindowForm.csproj.CoreCompileInputs.cache
+C:\Users\matistark\Desktop\laboratorio-07-MatiasCornejo\CalculadoraWindowForm\CalculadoraWindowForm\obj\Debug\CalculadoraWindowForm.exe
+C:\Users\matistark\Desktop\laboratorio-07-MatiasCornejo\CalculadoraWindowForm\CalculadoraWindowForm\obj\Debug\CalculadoraWindowForm.pdb
