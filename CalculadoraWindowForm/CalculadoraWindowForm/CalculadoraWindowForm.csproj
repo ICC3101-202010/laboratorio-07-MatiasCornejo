@@ -50,6 +50,12 @@
     <Compile Include="Clases\Mult.cs" />
     <Compile Include="Clases\Resta.cs" />
     <Compile Include="Clases\Suma.cs" />
+    <Compile Include="Clases\ventanahist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\ventanahist.Designer.cs">
+      <DependentUpon>ventanahist.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +64,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Clases\ventanahist.resx">
+      <DependentUpon>ventanahist.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

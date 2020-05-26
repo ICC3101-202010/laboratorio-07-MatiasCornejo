@@ -8,3 +8,4 @@ C:\Users\matistark\Desktop\laboratorio-07-MatiasCornejo\CalculadoraWindowForm\Ca
 C:\Users\matistark\Desktop\laboratorio-07-MatiasCornejo\CalculadoraWindowForm\CalculadoraWindowForm\obj\Debug\CalculadoraWindowForm.csproj.CoreCompileInputs.cache
 C:\Users\matistark\Desktop\laboratorio-07-MatiasCornejo\CalculadoraWindowForm\CalculadoraWindowForm\obj\Debug\CalculadoraWindowForm.exe
 C:\Users\matistark\Desktop\laboratorio-07-MatiasCornejo\CalculadoraWindowForm\CalculadoraWindowForm\obj\Debug\CalculadoraWindowForm.pdb
+C:\Users\matistark\Desktop\laboratorio-07-MatiasCornejo\CalculadoraWindowForm\CalculadoraWindowForm\obj\Debug\CalculadoraWindowForm.Clases.ventanahist.resources

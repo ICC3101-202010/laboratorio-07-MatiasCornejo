@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CalculadoraWindowForm.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,8 @@ namespace CalculadoraWindowForm
         double Op1;//aca definimos la primera y segunda operacion en numeros que recibira la calculadora
         double Op2;
         string Operacion;//defino el strign que me reflejara la operacion que realizo
-        
+
+        List<string> Hist = new List<string>(); //creo una nueva lista donde guardare el historial de resultados
 
         double op3;//guara el ultimo valor alcanzado
 
@@ -95,19 +97,22 @@ namespace CalculadoraWindowForm
                 Mult = obj1.Multi(Op1 ,Op2);  //creo la operacion si es que sale mult , lo hare analogo para todas las operaciones
                 tbxPant.Text = Mult.ToString();
                 op3 = Mult;
-                
-               
+                Hist.Add(Mult.ToString());
+
+
             }
             else if (Operacion == "/")
             {
              
                 Div = obj2.Divi(Op1, Op2);  //creo la operacion si es que sale mult , lo hare analogo para todas las operaciones
-                
+            
 
                 if (Op2 != 0)
                 {
                     tbxPant.Text = Div.ToString();
                     op3 = Div;
+                    Hist.Add(Div.ToString());
+                    
                 }
                 else if (Op2 == 0)
                 {
@@ -127,6 +132,7 @@ namespace CalculadoraWindowForm
                 Sum = obj3.Sumar(Op1, Op2);  //creo la operacion si es que sale mult , lo hare analogo para todas las operaciones
                 tbxPant.Text = Sum.ToString();
                 op3 = Sum;
+                Hist.Add(Sum.ToString());
 
             }
             else if (Operacion == "-")
@@ -134,7 +140,8 @@ namespace CalculadoraWindowForm
                 Rest = obj4.Restar(Op1, Op2);  //creo la operacion si es que sale mult , lo hare analogo para todas las operaciones
                 tbxPant.Text = Rest.ToString();
                 op3 = Rest;
-
+                Hist.Add(Rest.ToString());
+            
             }
 
 
@@ -186,12 +193,24 @@ namespace CalculadoraWindowForm
 
         private void button3_Click(object sender, EventArgs e)
         {
-            tbxPant.Text = tbxPant.Text + "DEL";
+            if (tbxPant.Text.Length == 1)
+                tbxPant.Text = "";
+            else
+                tbxPant.Text = tbxPant.Text.Substring(0, tbxPant.Text.Length - 1);
+
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             tbxPant.Clear();
+
+
+        }
+
+        private void btnhist_Click(object sender, EventArgs e)
+        {
+            ventanahist ventanahist = new ventanahist();
+            ventanahist.Show();
 
 
         }
